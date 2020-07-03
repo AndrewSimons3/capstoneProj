@@ -1,30 +1,35 @@
 import React from 'react'
 import TextField from '@material-ui/core/TextField'
-// import { useHistory } from 'react-router-dom'
 import Button from '@material-ui/core/Button'
+import { useHistory } from 'react-router-dom'
+import ButtonAppBar from './NavBar'
 
 
 const Login = () => {
-  // const history = useHistory()
+  const history = useHistory()
 
-  // const userLoggedIn = (e) => {
-  //   e.preventDefault()
-  //   document.cookie = "loggedIn=true;max-age=60*1000"
-  //   history.push("/")
+  const userLoggedIn = (e) => {
+    e.preventDefault()
+    document.cookie = "loggedIn=true;max-age=60*1000"
+    history.push("/")
 
+  };
   return (
     <div>
+      <ButtonAppBar loggedIn={false}></ButtonAppBar>
+         <div className="App">
       <form>
         <br />
         <TextField id="standard-basic" label="Username*"style={{width: "40%"}}/>
         <br />
         <TextField id="standard-basic" label="Password*" style={{width: "40%"}} />
         <br />
-        <Button type="submit" variant="contained" color="inherit" style={{margin: "30px", width:"40%"}} >
+        <Button onClick={userLoggedIn} type="submit" variant="contained" color="inherit" style={{margin: "30px", width:"40%"}} >
           Login
         </Button>
       </form>
     </div> 
+    </div>
   )
 }
 
