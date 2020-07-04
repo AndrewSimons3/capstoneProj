@@ -29,7 +29,7 @@ export default function ButtonAppBar(props) {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" style= {{background: '#4caf50'}}>
+      <AppBar position="static" style= {{background: '#002984'}}>
         <Toolbar>
           <Typography edge="start" variant="h6" className={classes.title}>
             Presidential Election Odds
