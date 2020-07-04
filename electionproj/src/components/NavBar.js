@@ -32,9 +32,9 @@ export default function ButtonAppBar(props) {
       <AppBar position="static" style= {{background: '#4caf50'}}>
         <Toolbar>
           <Typography edge="start" variant="h6" className={classes.title}>
-            Austin Small Business
+            Presidential Election Odds
           </Typography>
-          <Link className='link' to='/'>Listings</Link>
+          <Link className='link' to='/'>Odds</Link>
           {isAuthenticated && (<Link className='link' to='/add'>Add</Link>)}
           <Link className='link' onClick={logOut} to='/login'>{loginButtonText}</Link>
         </Toolbar>
