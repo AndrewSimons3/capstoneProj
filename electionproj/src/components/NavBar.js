@@ -35,7 +35,7 @@ export default function ButtonAppBar(props) {
             Presidential Election Odds
           </Typography>
           <Link className='link' to='/'>Odds</Link>
-          {isAuthenticated && (<Link className='link' to='/add'>Add</Link>)}
+          {isAuthenticated && (<Link className='link' to='/home'>Home</Link>)}
           <Link className='link' onClick={logOut} to='/login'>{loginButtonText}</Link>
         </Toolbar>
       </AppBar>

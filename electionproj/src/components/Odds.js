@@ -1,5 +1,6 @@
 import React from 'react'
 import Table from '@material-ui/core/Table'
+import Logo from '../images/tb.jpg'
 // import TableHead from '@material-ui/core/TableHead'
 // import TableRow from '@material-ui/core/TableRow'
 // import TableCell from '@material-ui/core/TableCell'
@@ -13,7 +14,9 @@ const Odds = (props) => {
     <div>
     <TableContainer>
       <Table>
-       <div>Hello World</div>
+       <div>
+       <img src={Logo} />
+       </div>
       </Table>
     </TableContainer>
     </div>
