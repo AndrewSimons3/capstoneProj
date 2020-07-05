@@ -30,7 +30,7 @@ class Odds extends React.Component {
         <div>
         {
           odds.map((candidate, key) => {
-            return <div index={key}>{candidate.firstname + ' ' + candidate.lastname}</div>
+            return <div index={key}><img src={`https://electionbettingodds.com/${candidate.shortname}.png`}/><span>{candidate.win_probability}</span></div>
           })
         }
         </div>
