@@ -1,10 +1,10 @@
 import React from 'react'
 import { Switch, Route, } from 'react-router'
-import Odds from './containers/Odds'
+import Odds from './containers/odds'
 import Login from './components/Login'
 import { checkAuth } from './checkAuth'
 import ButtonAppBar from './components/NavBar'
-import Details from './containers/Details'
+import Details from './containers/details'
 
 // const ProtectedRoute = ({component: Component, ...rest}) => {
 //   const comp = Component

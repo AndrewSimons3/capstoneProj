@@ -1,9 +1,11 @@
-  import { combineReducers } from 'redux'
+import { combineReducers } from 'redux'
 
 const odds = (state = [], action) => {
   switch(action.type) {
-      default:
-          return state
+    case 'FETCH_CANDIDATES':
+      return action.value;
+    default:
+      return state
   }
 }
 
